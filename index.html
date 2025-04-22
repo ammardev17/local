@@ -1,0 +1,43 @@
+To https://github.com/ammardev17/First.git
+   d04dfb5..b36e3fc  main -> main
+PS C:\Users\ammar\Desktop\New folder (2)\First> git add .
+PS C:\Users\ammar\Desktop\New folder (2)\First> cd github local
+Set-Location : A positional parameter cannot be found that accepts argument 'local'.
+At line:1 char:1
++ cd github local
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+ 
+PS C:\Users\ammar\Desktop\New folder (2)\First> pwd
+
+Path
+----
+C:\Users\ammar\Desktop\New folder (2)\First
+
+
+PS C:\Users\ammar\Desktop\New folder (2)\First> ls -a
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
++    ~~
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git add .
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git commit -m "new "
+[main (root-commit) f33a2c5] new
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newfile
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git status 
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git remote add origin https://github.com/ammardev17/local.git
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git remote -v
+origin  https://github.com/ammardev17/local.git (fetch)
+origin  https://github.com/ammardev17/local.git (push) 
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git branch
+* main
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> git push -u  origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 203 bytes | 203.00 KiB/s, done. 
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ammardev17/local.git  
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\ammar\Desktop\New folder (2)\Ammar> 
